@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.CeatController">
+   <children>
+      <TableView fx:id="tableMesaj" layoutX="14.0" layoutY="22.0" prefHeight="139.0" prefWidth="376.0">
+        <columns>
+            <TableColumn fx:id="idMesaj" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="from" prefWidth="75.0" text="De la" />
+          <TableColumn fx:id="to" prefWidth="75.0" text="Catre" />
+            <TableColumn fx:id="mesaj" prefWidth="75.0" text="Mesaj" />
+            <TableColumn fx:id="data" prefWidth="75.0" text="Data" />
+            <!-- TableColumn fx:id="reply" prefWidth="75.0" text="Raspuns" -->
+        </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="181.0" text="ID" />
+      <TextField fx:id="idX" layoutX="14.0" layoutY="208.0" />
+      <Button layoutX="14.0" layoutY="233.0" mnemonicParsing="false" onAction="#adaugaDestinatar" text="Add to" />
+      <Button layoutX="319.0" layoutY="233.0" mnemonicParsing="false" onAction="#seteazaMesaj" text="Set mesaj" />
+      <Button layoutX="144.0" layoutY="258.0" mnemonicParsing="false" onAction="#sendMesaj" prefHeight="36.0" prefWidth="92.0" text="Send" />
+      <Label layoutX="244.0" layoutY="181.0" text="Mesaj" />
+      <TextField fx:id="mesajCurent" layoutX="236.0" layoutY="208.0" />
+   </children>
+</AnchorPane>

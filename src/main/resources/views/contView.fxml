@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="395.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.ContController">
+    <children>
+        <Label layoutX="35.0" layoutY="14.0" text="Prieteni excel" />
+      <TableView fx:id="tablePrieteni" layoutY="31.0" prefHeight="200.0" prefWidth="315.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nume" prefWidth="75.0" text="Nume" />
+            <TableColumn fx:id="prenume" prefWidth="75.0" text="Prenume" />
+            <TableColumn fx:id="data" prefWidth="75.0" text="Data" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idCautare" layoutX="21.0" layoutY="300.0" />
+      <Label layoutX="21.0" layoutY="274.0" text="ID" />
+      <Button fx:id="butonAdauga" layoutX="21.0" layoutY="333.0" mnemonicParsing="false" onAction="#adaugaPrieten" text="Adauga prieten" />
+      <Button fx:id="butonStergePrieten" layoutX="184.0" layoutY="333.0" mnemonicParsing="false" onAction="#stergePrieten" text="Sterge prieten" />
+      <TableView fx:id="tableF" layoutX="322.0" layoutY="31.0" prefHeight="200.0" prefWidth="290.0">
+        <columns>
+          <TableColumn fx:id="from" prefWidth="75.0" text="De la" />
+          <TableColumn fx:id="to" prefWidth="75.0" text="Catre" />
+            <TableColumn fx:id="status" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="dataF" prefWidth="75.0" text="Data" />
+        </columns>
+      </TableView>
+      <Label layoutX="331.0" layoutY="14.0" text="Cereri de prietenie excel" />
+      <Button layoutX="443.0" layoutY="258.0" mnemonicParsing="false" onAction="#acceptaC" text="Accepta cerere" />
+      <Button layoutX="331.0" layoutY="258.0" mnemonicParsing="false" onAction="#refuzaC" text="Refuza cerere" />
+      <Button layoutX="388.0" layoutY="294.0" mnemonicParsing="false" onAction="#retrageC" text="Retrage cerere" />
+      <Button layoutX="336.0" layoutY="333.0" mnemonicParsing="false" onAction="#ceatAction" text="Ceat" />
+
+    </children>
+</AnchorPane>
